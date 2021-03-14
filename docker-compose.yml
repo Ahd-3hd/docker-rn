@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  exp:
+    build: .
+    command: expo start
+    volumes:
+      - ./:/usr/src/proj/myapp
+    ports:
+      - 19000:19000
+      - 19001:19001
